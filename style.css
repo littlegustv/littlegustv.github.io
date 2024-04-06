@@ -1,0 +1,94 @@
+body {
+	background-color: white;
+	background-image: url('assets/images/old_wall.png');
+	font-family: Verdana, Ubuntu, sans-serif;
+	padding-top: 4em;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Inika, monospace;
+	font-weight: normal;
+	margin: 0;
+}
+p {
+	line-height: 1.4em;
+}
+a, a:hover, a:visited, a:focus, a:active {
+	color: inherit;
+	text-decoration: none;
+}
+.text-accent {
+	color: #23A9A1;
+}
+
+.container {
+	max-width: 1040px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+	padding: 0 1em;
+}
+.container-narrow {
+	max-width: 480px;
+}
+
+.homepage-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.homepage-nav a {
+	position: relative;
+}
+.homepage-nav a:before {
+	content: '';
+	position: absolute;
+	left: -16px;
+	top: 0;
+	height: 100%;
+	border-left: 0px solid black;
+	transition: border 0.2s;
+}
+.homepage-nav a:hover:before {
+	border-left: 8px solid black;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  width: 160px;
+  align-content: center;
+  justify-content: center;
+}
+.social-media > a {
+  display: block;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.social-media > a > svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.post-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+.post-tile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-tile-image {
+	height: 180px;
+}
+.post-tile-image > img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}

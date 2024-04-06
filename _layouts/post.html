@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	{% include head.html %}
+  <body>
+    <div class="container container-narrow">
+    	<div>
+	    	<h1>{{ page.title }}</h1>
+	    	<h2 class="text-accent">{{ page.subtitle }}</h2>
+    	</div>
+    	<img src="{{ page.image }}" alt="">
+    	<div>
+	    	{{ content }}
+    	</div>
+    </div>
+  </body>
+</html>

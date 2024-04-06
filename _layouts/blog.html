@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	{% include head.html %}
+  <body>
+    <div class="container">
+    	{% for post in site.posts %}
+    		<a class="post-row" href="{{ post.url }}">
+    			<div class="post-tile-title">
+    				<h1>{{ post.title }}</h1>
+    				<h4 class="text-accent">{{ post.subtitle }}</h4>
+    			</div>
+    			<div class="post-tile-image">
+    				<img src="{{ post.image }}" alt="">
+    			</div>
+    		</a>
+    	{% endfor %}
+    </div>
+  </body>
+</html>
