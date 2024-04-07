@@ -2,6 +2,11 @@
 <html>
 	{% include head.html %}
   <body>
+  	<div class="nav-container">
+			<div class="nav">
+				<h3><a href="/">Home</a></h3>
+			</div>
+		</div>
     <div class="container">
     	{% for post in site.posts %}
     		<a class="post-row" href="{{ post.url }}">

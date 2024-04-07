@@ -25,22 +25,22 @@ a, a:hover, a:visited, a:focus, a:active {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	gap: 4em;
+	gap: 2em;
 	padding: 0 1em;
 }
 .container-narrow {
 	max-width: 480px;
 }
 
-.homepage-nav {
+.nav {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 }
-.homepage-nav a {
+.nav a {
 	position: relative;
 }
-.homepage-nav a:before {
+.nav a:before {
 	content: '';
 	position: absolute;
 	left: -16px;
@@ -49,7 +49,7 @@ a, a:hover, a:visited, a:focus, a:active {
 	border-left: 0px solid black;
 	transition: border 0.2s;
 }
-.homepage-nav a:hover:before {
+.nav a:hover:before {
 	border-left: 8px solid black;
 }
 
@@ -77,13 +77,33 @@ a, a:hover, a:visited, a:focus, a:active {
   grid-template-columns: 1fr 1fr;
   gap: 2em;
 }
+.post-row:hover > .post-tile-image {
+  filter: saturate(0%);
+}
+
 .post-tile-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.post-tile-title h1 {
+  position: relative;
+}
+.post-tile-title h1:before {
+	content: '';
+	position: absolute;
+	left: -16px;
+	top: 0;
+	height: 100%;
+	border-left: 0px solid black;
+	transition: border 0.2s;
+}
+.post-row:hover .post-tile-title h1:before {
+	border-left: 8px solid black;
+}
 .post-tile-image {
 	height: 180px;
+  transition: filter 0.75s;
 }
 .post-tile-image > img {
   display: block;
@@ -91,4 +111,45 @@ a, a:hover, a:visited, a:focus, a:active {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+.post-image {
+	width: 640px;
+  margin-left: calc(50% - 320px);
+  border-radius: 10px;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+@media (max-width: 768px) {
+	.post-row {
+		grid-template-columns: 1fr;
+		gap: 0.5em;
+		margin-bottom: 1em;
+	}
+	.container {
+		gap: 1em;
+	}
+}
+
+@media (max-width: 640px) {
+	.post-image {
+		width: 100%;
+		margin: 0;
+		min-height: 320px;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 360px) {
+	.social-media {
+		grid-template-columns: 1fr 1fr;
+		width: 80px;
+	}
 }

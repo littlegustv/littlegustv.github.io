@@ -2,12 +2,18 @@
 <html>
 	{% include head.html %}
   <body>
+  	<div class="nav-container">
+			<div class="nav">
+				<h3><a href="/">Home</a></h3>
+				<h3><a href="/blog">Blog</a></h3>
+			</div>
+		</div>
     <div class="container container-narrow">
     	<div>
 	    	<h1>{{ page.title }}</h1>
 	    	<h2 class="text-accent">{{ page.subtitle }}</h2>
     	</div>
-    	<img src="{{ page.image }}" alt="">
+    	<img class="post-image" src="{{ page.image }}" alt="">
     	<div>
 	    	{{ content }}
     	</div>
