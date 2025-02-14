@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	{% include head.html %}
+  <body>
+  	<div class="relative h-48 w-full">
+	  	<img src="/assets/images/{{ page.folder }}/{{ page.banner }}" alt="" class="w-full h-full object-cover block absolute" />
+  		<div class="container">
+	  		<img src="/assets/images/{{ page.folder }}/{{ page.logo }}" alt="" class="h-48 object-contain z-10">
+  		</div>
+  	</div>
+    <div class="container">
+    	<div class="grid grid-cols-6 gap-8 my-16">
+    		<div class="col-span-6">
+    			<h1 class="text-3xl font-bold">Wirelight - Presskit </h1>
+    		</div>
+    		<div class="col-span-2 flex flex-col gap-2">
+    			<h2 class="text-xl font-bold">Overview</h2>
+    			<div class="spacer"></div>
+  				{% for overview_element in page.overview %}
+  					<div><span class="font-bold">{{ overview_element[0] | capitalize }}: </span>{{ overview_element[1] }}</div>
+  				{% endfor %}
+  				<div><span class="font-bold">Asset Download (ZIP): </span> <a href="/assets/images/{{ page.folder}}/{{ asset_download }}">{{ asset_download }}</a></div>
+    			<div class="spacer"></div>
+    			<h2 class="text-xl font-bold">Social Media</h2>
+    			{% for social_media_element in page.social_media %}
+    				<a href="{{ social_media_element[1] }}" target="_blank">{{ social_media_element[0] | capitalize }}</a>
+    			{% endfor %}
+    			<div class="spacer"></div>
+    			<h2 class="text-xl font-bold">About Developer</h2>
+    			<div>{{ page.about }}</div>
+    		</div>
+    		<div class="col-span-4 flex flex-col gap-2">
+    			<h2 class="text-xl font-bold">Summary</h2>
+    			{{ content }}
+    			<h2 class="text-xl font-bold">Screenshots</h2>
+    			<div class="grid grid-cols-2 gap-2">
+	    			{% for screenshot in page.screenshots %}
+	    				<img src="/assets/images/{{ page.folder }}/{{ screenshot }}" alt="">
+	    			{% endfor %}
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </body>
+</html>

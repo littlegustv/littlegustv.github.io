@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 vendor
 *.todo
+node_modules

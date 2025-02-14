@@ -13,7 +13,7 @@ p {
 	line-height: 1.4em;
 }
 a, a:hover, a:visited, a:focus, a:active {
-	color: inherit;
+	color: #3b5dc9;
 	text-decoration: none;
 }
 .text-accent {
@@ -125,6 +125,15 @@ a, a:hover, a:visited, a:focus, a:active {
   align-items: center;
   justify-content: center;
   margin: 2em 0;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	flex-gap: 0.5em;
+}
+li:before {
+	content: '▸';
 }
 
 @media (max-width: 768px) {
