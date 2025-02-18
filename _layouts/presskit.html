@@ -19,7 +19,7 @@
   				{% for overview_element in page.overview %}
   					<div><span class="font-bold">{{ overview_element[0] | capitalize }}: </span>{{ overview_element[1] }}</div>
   				{% endfor %}
-  				<div><span class="font-bold">Asset Download (ZIP): </span> <a href="/assets/images/{{ page.folder}}/{{ asset_download }}">{{ asset_download }}</a></div>
+  				<div><a download href="/assets/{{ page.asset_download }}">Asset Download (ZIP)</a></div>
     			<div class="spacer"></div>
     			<h2 class="text-xl font-bold">Social Media</h2>
     			{% for social_media_element in page.social_media %}
@@ -29,13 +29,15 @@
     			<h2 class="text-xl font-bold">About Developer</h2>
     			<div>{{ page.about }}</div>
     		</div>
-    		<div class="col-span-4 flex flex-col gap-2">
+    		<div class="col-span-4 flex flex-col gap-4">
     			<h2 class="text-xl font-bold">Summary</h2>
     			{{ content }}
     			<h2 class="text-xl font-bold">Screenshots</h2>
     			<div class="grid grid-cols-2 gap-2">
 	    			{% for screenshot in page.screenshots %}
-	    				<img src="/assets/images/{{ page.folder }}/{{ screenshot }}" alt="">
+	    				<a href="/assets/images/{{ page.folder }}/{{ screenshot }}" target="_blank">
+		    				<img src="/assets/images/{{ page.folder }}/{{ screenshot }}" alt="">
+	    				</a>
 	    			{% endfor %}
     			</div>
     		</div>

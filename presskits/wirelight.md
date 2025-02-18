@@ -8,11 +8,11 @@ subtitle: A Tiny Turn-Based Tactical Soulslike
 folder: wirelight
 banner: library hero.png
 logo: library logo.png
-overview: { developer: e1sif games,	publisher: e1sif games, release date: Q3 2025, platforms: "PC (Steam, itch.io)", steam: <a href="https://store.steampowered.com/app/3512420" target="_blank">https://store.steampowered.com/app/3512420</a>, press contact: e1sif@gmail.com }
+overview: { developer: elsif,	publisher: elsif, release date: Q3 2025, platforms: "Windows, Linux", steam: '<a href="https://store.steampowered.com/app/3512420" target="_blank">https://store.steampowered.com/app/3512420</a>', itch: '<a href="https://e1sif.itch.io/wirelight" target="_blank">https://e1sif.itch.io/wirelight</a>', press contact: e1sif@gmail.com }
 social_media: { bluesky: https://bsky.app/profile/e1sif.itch.io, mastodon: https://mastodon.gamedev.place/@elsif }
-about: "ELSIF games is a solo developer making tiny games that often involve unique combinations of different genres and mechanics.  They previously created Arachnowopunk (2020), a single-button infinite-runner metroidvania, and Salvage/Salvagette (2018/2021), a turn-based bullet-hell game.  Wirelight (2025), a tactical turn-based SOULSLIKE, is their first Steam release."
+about: "ELSIF is a solo developer making tiny games that often involve unique combinations of different genres and mechanics.  They previously created Arachnowopunk (2020), a single-button infinite-runner metroidvania, and Salvage/Salvagette (2018/2021), a turn-based bullet-hell game.  Wirelight (2025), a tactical turn-based SOULSLIKE, is their first Steam release."
 screenshots: [library combat.png, dash.png, boss.png, menu.png, park.png]
-asset_download: boss.png
+asset_download: "files/downloadable presskit assets.zip"
 ---
 A tiny turn-based tactical... **soulslike**! Explore a twisty, interconnected world, battle enemies using a unique spin on a 'posture' system, and employ various upgrades to your advantage.
 
@@ -30,8 +30,10 @@ A tiny turn-based tactical... **soulslike**! Explore a twisty, interconnected wo
 ![Gameplay Gif](/assets/images/wirelight/gameplay 2.gif)
 
 <h2 class="text-xl font-bold">Trailer</h2>
-**Reveal Trailer (Youtube)**
-=== YOUTUBE EMBED ===
 
-**Reveal Trailer (Download)**
-=== VIDEO EMBED ===
+**Announcement Trailer (Youtube)**
+
+<iframe src="https://www.youtube.com/embed/AK8XIgJvoX4?si=8d0nrzjVyPX_CGor" class="aspect-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**Announcement Trailer (Downloadable)**
+<video src="/assets/video/reveal trailer 1.mp4"></video>

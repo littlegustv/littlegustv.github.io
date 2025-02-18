@@ -595,6 +595,10 @@ video {
   display: grid;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-48 {
   height: 12rem;
 }
@@ -621,6 +625,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-8 {
