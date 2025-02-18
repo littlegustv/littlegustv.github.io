@@ -130,10 +130,6 @@ a, a:hover, a:visited, a:focus, a:active {
 ul {
 	display: flex;
 	flex-direction: column;
-	flex-gap: 0.5em;
-}
-li:before {
-	content: '▸';
 }
 
 @media (max-width: 768px) {
