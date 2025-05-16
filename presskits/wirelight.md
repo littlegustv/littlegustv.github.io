@@ -11,7 +11,7 @@ logo: library logo.png
 overview: { developer: elsif,	announcement date: "February 24, 2024", release date: Q3 2025, platforms: "Windows, Linux", steam: '<a href="https://store.steampowered.com/app/3512420" target="_blank">https://store.steampowered.com/app/3512420</a>', itch: '<a href="https://e1sif.itch.io/wirelight" target="_blank">https://e1sif.itch.io/wirelight</a>', press contact: e1sif@gmail.com }
 social_media: { bluesky: https://bsky.app/profile/e1sif.itch.io, mastodon: https://mastodon.gamedev.place/@elsif }
 about: "<p class='mb-4'>ELSIF is a solo developer making tiny games that often involve unique combinations of different genres and mechanics.  Their previous work includes:</p><ul class='gap-2'><li><a href='https://e1sif.itch.io/arachnowopunk' target='_blank'>Arachnowopunk (2020)</a> - a single-button infinite-runner metroidvania</li><li><a href='https://e1sif.itch.io/salvagette' target='_blank'>Salvage/Salvagette (2018/2021)</a> - a turn-based bullet-hell shooter</li></ul>"
-screenshots: [library combat.png, dash.png, boss.png, menu.png, park.png]
+screenshots: [main capsule.png, library combat.png, dash.png, boss.png, menu.png, park.png]
 asset_download: "files/downloadable presskit assets.zip"
 ---
 A tiny turn-based tactical... **soulslike**! Explore a twisty, interconnected world, battle enemies using a unique spin on a 'posture' system, and employ different combinations of upgrades to your advantage.
